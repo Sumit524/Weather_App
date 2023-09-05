@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <script
+    src="https://kit.fontawesome.com/e0cc2d7f54.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body>
+
+
+
+
+  <!-- <div class="container"> -->
+
+
+
+
+
+
+  <div class="container">
+    <!-- <i class="fa-solid fa-square-pen"></i> -->
+    <header>
+    <div class="app_name">    <i> <i class='fas fa-cloud-sun-rain'></i> <span><i>WeatherGlimpse </i></span> <br>
+  
+
+
+   
+    </div>
+  </header>
+     <div class="header1">
+       <div class="search_box">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <div class="input_wrapper">
+          
+           <input       id="Textarea"       type="text" name="search" placeholder="···Enter the name of city···" class="search_box"   > 
+
+          <button class="glow-on-hover" type="button" id="Searchbtn"> 
+            
+            <div class="btnfont">
+            Search  </div></button>
+
+            <button class="refresh" onclick="refreshPage()">  <div class="btnfont">
+              <i class="fa-solid fa-arrows-rotate"></i> </div></button>
+        </div>
+      </div>
+    </div> 
+
+
+    <!-- <i class="fa-solid fa-square-pen fa-bounce"></i> -->
+    <div class="weather-body">
+      <div class="box">
+      <img src="weather_body_3-removebg-preview.png" alt="" class="weather-img">
+    </div>
+      <div class="weather-box">
+        <p class="temprature">0<sup>°c</sup></p>
+        <p class="discription">Light Rain</p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fas fa-tint"></i>
+          <div class="text">
+            <span id="humidity">00%</span>
+            <p  class="humidity_text"  >Humidity</p>
+          </div>
+        </div>
+        <div class="Wind_speed">
+          <i class="fas fa-wind"></i>
+          <div class="text">
+            <span id="Wind_speed">00 Km/H</span>
+            <p class="wind_text" >Wind-Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- "Not Found" image div -->
+    <div class="not-found" style="display: none;">
+      <img src="ntf_2.png" alt="Not Found" class="not-found-img">
+
+      <p class="correct"
+       >Sorry!! Please Enter correct city name.</p>
+    </div>
+  </div>
+  
+  <script src="weather.js"></script>
+
+  
+</body>
+</html>
